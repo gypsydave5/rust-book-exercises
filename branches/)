@@ -1,0 +1,10 @@
+fn main() {
+    let number = 3;
+
+    let x = if number < 5 {
+        println!("condition was true");
+        5
+    };
+
+    println!("here is x: {:?}", x);
+}
