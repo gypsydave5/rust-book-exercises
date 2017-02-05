@@ -31,10 +31,11 @@ fn push_it() {
 fn reading() {
     let v = vec![1, 2, 3, 4, 5];
     // Subscript notation
-    let third: &i32 = &v[2];
+    let third_i32: &i32 = &v[2];
     // Option baked in to the language
-    let third: Option<&i32> = v.get(2);
-    assert_eq!(Some(&3), third);
+    let third_opt: Option<&i32> = v.get(2);
+    assert_eq!(&3, third_i32);
+    assert_eq!(Some(&3), third_opt);
 }
 
 #[test]
@@ -42,7 +43,7 @@ fn reading() {
 fn panic() {
     let v = vec![1, 2, 3, 4, 5];
     // panic! at the out of bounds exception disco
-    let not_there = &v[100];
+    &v[100];
 }
 
 #[test]
@@ -50,8 +51,7 @@ fn dont_panic() {
     let v = vec![1, 2, 3, 4, 5];
     // Option means never having to say panic!
     // at the out of bounds exception disco
-    let not_there = v.get(100);
-    assert_eq!(None, not_there);
+    assert_eq!(None, v.get(100));
 }
 
 #[test]
