@@ -116,7 +116,27 @@ fn panics_when_range_not_on_character_boundary() {
 }
 
 #[test]
-fn string_iterator() {
+fn string_iterator_chars() {
+    let mut chars: Vec<char> = Vec::new();
     let hi = String::from("hi");
-    for c in hi.chars() {}
+
+    for c in hi.chars() {
+        chars.push(c);
+    }
+
+    assert_eq!('h', chars[0]);
+    assert_eq!('i', chars[1]);
+}
+
+#[test]
+fn string_iterator_bytes() {
+    let mut bytes: Vec<u8> = Vec::new();
+    let hello = "Здравствуйте".to_string();
+
+    for b in hello.bytes() {
+        bytes.push(b);
+    }
+
+    assert_eq!(208, bytes[0]);
+    assert_eq!(151, bytes[1]);
 }
