@@ -5,4 +5,6 @@ fn main() {
     for (k, v) in scores().iter() {
         println!("Team {} scored {}", k, v);
     }
+
+    println!("{:?}", scores());
 }
