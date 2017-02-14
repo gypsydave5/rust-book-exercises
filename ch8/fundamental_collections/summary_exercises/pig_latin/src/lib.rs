@@ -1,18 +1,26 @@
 pub fn pig_latin(word: String) -> String {
     let first_letter = word.chars().nth(0).unwrap();
-    let mut latin;
 
     if is_vowel(first_letter) {
-        latin = String::from(word);
-        latin.push_str("-");
-        latin.push_str("hay");
+        pig_latin_vowel(word)
     } else {
-        latin = String::from(&word[1..]);
-        latin.push_str("-");
-        latin.push(first_letter);
-        latin.push_str("ay");
+        pig_latin_non_vowel(word)
     }
+}
 
+fn pig_latin_vowel(word: String) -> String {
+    let mut latin = String::from(word);
+    latin.push_str("-");
+    latin.push_str("hay");
+    return latin;
+}
+
+fn pig_latin_non_vowel(word: String) -> String {
+    let first_letter = word.chars().nth(0).unwrap();
+    let mut latin = String::from(&word[1..]);
+    latin.push_str("-");
+    latin.push(first_letter);
+    latin.push_str("ay");
     return latin;
 }
 
