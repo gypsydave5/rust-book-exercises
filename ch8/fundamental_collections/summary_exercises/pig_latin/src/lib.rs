@@ -1,9 +1,8 @@
 pub fn pig_latin(word: String) -> String {
-    let first_letter = word.chars().nth(0).unwrap();
-
-    match first_letter {
-        'a' | 'e' | 'i' | 'o' | 'u' => pig_latin_vowel(word),
-        _ => pig_latin_non_vowel(word),
+    match word.chars().nth(0) {
+        Some('a') | Some('e') | Some('i') | Some('o') | Some('u') => pig_latin_vowel(word),
+        Some(_) => pig_latin_non_vowel(word),
+        None => String::new(),
     }
 }
 
