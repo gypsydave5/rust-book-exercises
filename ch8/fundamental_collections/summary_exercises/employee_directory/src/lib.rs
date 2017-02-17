@@ -1,5 +1,3 @@
-use std::collections::HashMap;
-
 pub struct Database {
     db: Vec<String>,
 }
@@ -16,7 +14,11 @@ impl Database {
 
     pub fn retrieve(&self, dept: &str) -> String {
         let header = "Dept: Engineering";
-        let names = self.db.join("\n\t");
+
+        let mut names = self.db.clone();
+        names.sort();
+        let names = names.join("\n\t");
+
         [header, &names].join("\n\t") + "\n"
     }
 }

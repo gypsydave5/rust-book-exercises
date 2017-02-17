@@ -21,7 +21,7 @@ fn private_fields_are_private() {
 }
 
 #[test]
-fn insert_two_employees_retrieve_department() {
+fn insert_two_employees_retrieve_department_alphabetical() {
     let insert_sally = "Add Sally to Engineering";
     let insert_roger = "Add Roger to Engineering";
 
@@ -30,7 +30,7 @@ fn insert_two_employees_retrieve_department() {
     db.insert(insert_sally);
     db.insert(insert_roger);
 
-    let expected_list = String::from("Dept: Engineering\n\tSally\n\tRoger\n");
+    let expected_list = String::from("Dept: Engineering\n\tRoger\n\tSally\n");
     let employee_list = db.retrieve("Engineering");
     assert_eq!(expected_list, employee_list);
 }
