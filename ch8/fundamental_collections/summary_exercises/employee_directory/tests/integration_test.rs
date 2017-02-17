@@ -7,7 +7,6 @@ fn insert_employee_retrieve_department() {
 
     db.insert(insert_string);
 
-
     let expected_list = String::from("Dept: Engineering\n\tSally\n");
     let employee_list = db.retrieve("Engineering");
     assert_eq!(expected_list, employee_list);
@@ -15,8 +14,10 @@ fn insert_employee_retrieve_department() {
 
 #[test]
 fn private_fields_are_private() {
-    // won't compile
+    // won't compiletest_function_name
     // db.db.insert("hi".to_string(), vec!["hi".to_string()])
+    // (although racer is happy to add completion)
+    // (but not for the public methods...)
 }
 
 #[test]
