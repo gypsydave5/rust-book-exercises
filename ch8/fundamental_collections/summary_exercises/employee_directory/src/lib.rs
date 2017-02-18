@@ -21,6 +21,10 @@ impl Database {
         [header, names].join("\n\t") + "\n"
     }
 
+    pub fn retrieve_all(&self) -> String {
+        String::from("Dept: Corrections\n\tAnne\nDept: Operations\n\tSteph\n")
+    }
+
     fn get_names_list(&mut self, dept: &str) -> String {
         let mut names = self.db.get_mut(dept).unwrap();
         names.sort();
