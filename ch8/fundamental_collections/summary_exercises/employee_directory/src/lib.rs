@@ -14,12 +14,15 @@ impl Database {
 
     pub fn retrieve(&self, dept: &str) -> String {
         let header = "Dept: Engineering";
-
-        let mut names = self.db.clone();
-        names.sort();
-        let names = names.join("\n\t");
+        let names = self.get_names_list();
 
         [header, &names].join("\n\t") + "\n"
+    }
+
+    fn get_names_list(&self) -> String {
+        let mut names = self.db.clone();
+        names.sort();
+        names.join("\n\t")
     }
 }
 
