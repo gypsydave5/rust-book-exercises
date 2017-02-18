@@ -16,9 +16,8 @@ impl Database {
     }
 
     pub fn retrieve(&mut self, dept: &str) -> String {
-        let header = ["Dept: ", dept].concat();
-        let names = self.get_names_list(dept);
-        [header, names].join("\n\t") + "\n"
+        let d = self.get_department(dept);
+        d.to_string() + "\n"
     }
 
     pub fn retrieve_all(&self) -> String {
@@ -31,15 +30,17 @@ impl Database {
         x.join("\n") + "\n"
     }
 
-    fn get_names_list(&mut self, dept: &str) -> String {
-        let mut names = self.db.get_mut(dept).unwrap();
-        names.sort();
-        names.join("\n\t")
-    }
-
     fn insert_employee(&mut self, name: &str, department: &str) {
         let mut dep = self.db.entry(department.to_string()).or_insert(Vec::new());
         dep.push(String::from(name));
+        dep.sort();
+    }
+
+    fn get_department(&self, dept: &str) -> Department {
+        Department {
+            name: dept.to_string(),
+            employees: self.db.get(dept).unwrap().clone(),
+        }
     }
 }
 
@@ -67,4 +68,25 @@ fn can_parse_a_department_from_the_insert_string() {
     let insert_string = "Add Bob to Amazing";
     let department = department_from(insert_string);
     assert_eq!("Amazing", department)
+}
+
+struct Department {
+    name: String,
+    employees: Vec<String>,
+}
+
+impl Department {
+    fn to_string(&self) -> String {
+        [department_header(&self.name), self.employees.join("\n\t")].join("\n\t")
+    }
+}
+
+#[test]
+fn department_to_string() {
+    let d = Department {
+        name: "Operations".to_string(),
+        employees: vec!["Steph".to_string(), "Dave".to_string()],
+    };
+
+    assert_eq!(d.to_string(), "Dept: Operations\n\tSteph\n\tDave")
 }
