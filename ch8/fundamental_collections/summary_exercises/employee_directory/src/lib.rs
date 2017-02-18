@@ -22,7 +22,13 @@ impl Database {
     }
 
     pub fn retrieve_all(&self) -> String {
-        String::from("Dept: Corrections\n\tAnne\nDept: Operations\n\tSteph\n")
+        let mut x: Vec<String> = self.db
+            .iter()
+            .map(|(d, ns)| [&department_header(&d)[..], &ns.join("\n\t")[..]].join("\n\t"))
+            .collect();
+
+        x.sort();
+        x.join("\n") + "\n"
     }
 
     fn get_names_list(&mut self, dept: &str) -> String {
@@ -35,6 +41,10 @@ impl Database {
         let mut dep = self.db.entry(department.to_string()).or_insert(Vec::new());
         dep.push(String::from(name));
     }
+}
+
+fn department_header(d: &str) -> String {
+    ["Dept: ", d].concat().clone()
 }
 
 fn name_from(s: &str) -> &str {

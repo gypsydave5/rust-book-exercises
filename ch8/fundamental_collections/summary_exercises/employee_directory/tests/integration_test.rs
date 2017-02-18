@@ -61,3 +61,17 @@ fn retrieve_all() {
     let expected_list = String::from("Dept: Corrections\n\tAnne\nDept: Operations\n\tSteph\n");
     assert_eq!(expected_list, employee_list);
 }
+
+#[test]
+fn retrieve_all_one_department() {
+    let insert_steph = "Add Steph to Operations";
+
+    let mut db = employee_directory::new();
+
+    db.insert(insert_steph);
+
+    let employee_list = db.retrieve_all();
+    let expected_list = String::from("Dept: Operations\n\tSteph\n");
+    assert_eq!(expected_list, employee_list);
+
+}
