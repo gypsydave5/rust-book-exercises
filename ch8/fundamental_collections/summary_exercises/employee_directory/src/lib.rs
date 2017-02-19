@@ -9,6 +9,14 @@ pub fn new() -> Database {
     Database { db: HashMap::new() }
 }
 
+enum Record {
+    Department {
+        name: String,
+        employees: Vec<String>,
+    },
+    Nowt,
+}
+
 impl Database {
     pub fn insert(&mut self, s: &str) {
         let name = name_from(s);
@@ -38,13 +46,13 @@ impl Database {
         dep.sort();
     }
 
-    fn get_department(&self, dept: &str) -> Option<Department> {
+    fn get_department(&self, dept: &str) -> Record {
 
         let employees = self.db.get(dept).clone();
 
         match employees {
-            Some(e) => Some(new_department((dept.to_string(), e.clone()))),
-            None => None,
+            Some(e) => new_department((dept.to_string(), e.clone())),
+            None => Record::Nowt,
         }
     }
 }
@@ -75,35 +83,20 @@ fn can_parse_a_department_from_the_insert_string() {
     assert_eq!("Amazing", department)
 }
 
-struct Department {
-    name: String,
-    employees: Vec<String>,
-}
-
-impl Department {
-    fn to_string(&self) -> String {
-        [department_header(&self.name), self.employees.join("\n\t")].join("\n\t")
-    }
-}
-
-impl fmt::Display for Department {
-    fn fmt(&self, f: &mut fmt::Formatter) {
-        let employees = self.employees.join("\n\t");
-        write!(f, "Dept: {}\n\t{}", self.name, employees)
-    }
-}
-
-impl fmt::Display for Option<Department> {
-    fn fmt(&self, f: &mut fmt::Formatter) {
-        match self {
-            Some(department) => department.to_string(),
-            None => "Error - no such department",
+impl fmt::Display for Record {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        match *self {
+            Record::Nowt => write!(f, "Error - no such department"),
+            Record::Department => {
+                let employees = d.employees.join("\n\t");
+                write!(f, "Dept: {}\n\t{}", d.name, employees)
+            }
         }
     }
 }
 
-fn new_department((name, employee_list): (String, Vec<String>)) -> Department {
-    Department {
+fn new_department((name, employee_list): (String, Vec<String>)) -> Record {
+    Record::Department {
         name: name,
         employees: employee_list,
     }
@@ -111,7 +104,7 @@ fn new_department((name, employee_list): (String, Vec<String>)) -> Department {
 
 #[test]
 fn department_to_string() {
-    let d = Department {
+    let d = Record::Department {
         name: "Operations".to_string(),
         employees: vec!["Steph".to_string(), "Dave".to_string()],
     };
