@@ -1,4 +1,5 @@
 use std::collections::HashMap;
+use std::fmt;
 
 pub struct Database {
     db: HashMap<String, Vec<String>>,
@@ -37,10 +38,13 @@ impl Database {
         dep.sort();
     }
 
-    fn get_department(&self, dept: &str) -> Department {
-        Department {
-            name: dept.to_string(),
-            employees: self.db.get(dept).unwrap().clone(),
+    fn get_department(&self, dept: &str) -> Option<Department> {
+
+        let employees = self.db.get(dept).clone();
+
+        match employees {
+            Some(e) => Some(new_department((dept.to_string(), e.clone()))),
+            None => None,
         }
     }
 }
@@ -79,6 +83,22 @@ struct Department {
 impl Department {
     fn to_string(&self) -> String {
         [department_header(&self.name), self.employees.join("\n\t")].join("\n\t")
+    }
+}
+
+impl fmt::Display for Department {
+    fn fmt(&self, f: &mut fmt::Formatter) {
+        let employees = self.employees.join("\n\t");
+        write!(f, "Dept: {}\n\t{}", self.name, employees)
+    }
+}
+
+impl fmt::Display for Option<Department> {
+    fn fmt(&self, f: &mut fmt::Formatter) {
+        match self {
+            Some(department) => department.to_string(),
+            None => "Error - no such department",
+        }
     }
 }
 

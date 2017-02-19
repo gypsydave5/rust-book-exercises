@@ -75,3 +75,11 @@ fn retrieve_all_one_department() {
     assert_eq!(expected_list, employee_list);
 
 }
+
+#[test]
+fn retrieve_non_existant_department() {
+    let mut db = employee_directory::new();
+    let expected_list = String::from("Error - no such department");
+    let employee_list = db.retrieve("Amazing");
+    assert_eq!(expected_list, employee_list);
+}
