@@ -87,9 +87,9 @@ impl fmt::Display for Record {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         match *self {
             Record::Nowt => write!(f, "Error - no such department"),
-            Record::Department => {
-                let employees = d.employees.join("\n\t");
-                write!(f, "Dept: {}\n\t{}", d.name, employees)
+            Record::Department { ref name, ref employees } => {
+                let employees = employees.join("\n\t");
+                write!(f, "Dept: {}\n\t{}", name, employees)
             }
         }
     }
