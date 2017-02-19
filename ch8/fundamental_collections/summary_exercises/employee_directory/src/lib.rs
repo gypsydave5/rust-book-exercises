@@ -20,10 +20,11 @@ impl Database {
         d.to_string() + "\n"
     }
 
-    pub fn retrieve_all(&self) -> String {
+    pub fn retrieve_all(self) -> String {
         let mut x: Vec<String> = self.db
-            .iter()
-            .map(|(d, ns)| [&department_header(&d)[..], &ns.join("\n\t")[..]].join("\n\t"))
+            .into_iter()
+            .map(&new_department)
+            .map(|d| d.to_string())
             .collect();
 
         x.sort();
@@ -78,6 +79,13 @@ struct Department {
 impl Department {
     fn to_string(&self) -> String {
         [department_header(&self.name), self.employees.join("\n\t")].join("\n\t")
+    }
+}
+
+fn new_department((name, employee_list): (String, Vec<String>)) -> Department {
+    Department {
+        name: name,
+        employees: employee_list,
     }
 }
 
