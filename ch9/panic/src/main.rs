@@ -2,7 +2,7 @@ use std::fs::File;
 use std::io::ErrorKind;
 
 fn main() {
-    matching_on_different_types_of_error();
+    expect_is_like_unwrap_but_with_a_custom_error();
 }
 
 fn this_kinda_thing_panics() {
@@ -35,4 +35,14 @@ fn matching_on_different_types_of_error() {
         }
         Err(error) => panic!("There was an error opening the file: {:?}", error),
     };
+}
+
+fn unwrap_is_a_helper_on_results_that_panics_when_err() {
+    let filename = "hello.txt";
+    let f = File::open(filename).unwrap();
+}
+
+fn expect_is_like_unwrap_but_with_a_custom_error() {
+    let filename = "hello.txt";
+    let f = File::open(filename).expect(&format!("Failed to open {}", filename));
 }
