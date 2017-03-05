@@ -8,6 +8,13 @@ fn main() {
     let point_u32 : Point<u32> = Point::new(7, 8);
     println!("point_u32.x = {}, point_u32.y = {}.", point_u32.x(), point_u32.y());
     println!("Sum of the float = {}.", point_float.x_plus_y());
+
+    let a = PointTwo { x: "foo", y: 'a' };
+    let b = PointTwo { x: 'b', y: "bar" };
+    let (c, d) = a.mixup(b);
+
+    println!("c = {:?}", c);
+    println!("d = {:?}", d);
 }
 
 struct Point<T> {
@@ -35,13 +42,16 @@ impl Point<f32> {
     }
 }
 
+#[derive(Debug)]
 struct PointTwo<T, U> {
     x: T,
     y: U,
 }
 
 impl<T, U> PointTwo<T, U> {
-    pub fn mixup<V, W>(&self, other: PointTwo<V, W>) -> (PointTwo<T, W>, PointTwo<V, U>) {
+    // doing this with a move rather than a reference as the reference would require the types to
+    // implement the trait Copy... and that's the next section :D
+    pub fn mixup<V, W>(self, other: PointTwo<V, W>) -> (PointTwo<T, W>, PointTwo<V, U>) {
         let a = PointTwo {
             x: self.x,
             y: other.y,
