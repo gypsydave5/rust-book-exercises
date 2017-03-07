@@ -1,7 +1,7 @@
 fn main() {
-    print_summaries(news_articles());
-    print_summaries(tweets());
-    print_summaries(feed());
+    println!("{}", summary_text(news_articles()));
+    println!("{}", summary_text(tweets()));
+    println!("{}", summary_text(feed()));
 }
 
 pub trait Summarizable {
@@ -42,10 +42,9 @@ impl Summarizable for Tweet {
     }
 }
 
-fn print_summaries<T: Summarizable>(articles: Vec<T>) {
-    for a in articles {
-        println!("{}", a.summary());
-    }
+fn summary_text<T: Summarizable>(articles: Vec<T>) -> String {
+    let list : Vec<String> = articles.into_iter().map(|a| a.summary()).collect();
+    list.join("\n")
 }
 
 fn feed() -> Vec<Box<Summarizable + 'static>> {
