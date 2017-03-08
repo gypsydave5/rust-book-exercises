@@ -2,6 +2,7 @@ fn main() {
     println!("{}", summary_text(news_articles()));
     println!("{}", summary_text(tweets()));
     println!("{}", summary_text(feed()));
+    println!("{}", summary_text(vec![1, 2, 3]));
 }
 
 pub trait Summarizable {
@@ -9,6 +10,8 @@ pub trait Summarizable {
         String::from("Read more now!")
     }
 }
+
+impl Summarizable for i32 {}
 
 pub struct NewsArticle {
     pub headline: String,
@@ -20,12 +23,6 @@ pub struct NewsArticle {
 impl Summarizable for NewsArticle {
     fn summary(&self) -> String {
         format!("{}, by {} ({})", self.headline, self.author, self.location)
-    }
-}
-
-impl Summarizable for Box<Summarizable> {
-    fn summary(&self) -> String {
-        (**self).summary()
     }
 }
 
@@ -42,8 +39,18 @@ impl Summarizable for Tweet {
     }
 }
 
+impl Summarizable for Box<Summarizable> {
+    fn summary(&self) -> String {
+        (**self).summary()
+    }
+}
+
 fn summary_text<T: Summarizable>(articles: Vec<T>) -> String {
-    let list : Vec<String> = articles.into_iter().map(|a| a.summary()).collect();
+    let list : Vec<String> = articles
+        .into_iter()
+        .map(|a| a.summary())
+        .collect();
+
     list.join("\n")
 }
 
