@@ -3,15 +3,22 @@ fn main() {
     println!("{}", summary_text(tweets()));
     println!("{}", summary_text(feed()));
     println!("{}", summary_text(vec![1, 2, 3]));
+    println!("{}", summary_text(join_feeds()));
 }
 
 pub trait Summarizable {
     fn summary(&self) -> String {
         String::from("Read more now!")
     }
+
+    fn box_me(self) -> Box<Summarizable + 'static>;
 }
 
-impl Summarizable for i32 {}
+impl Summarizable for i32 {
+    fn box_me(self) -> Box<Summarizable + 'static> {
+        Box::new(self)
+    }
+}
 
 pub struct NewsArticle {
     pub headline: String,
@@ -23,6 +30,10 @@ pub struct NewsArticle {
 impl Summarizable for NewsArticle {
     fn summary(&self) -> String {
         format!("{}, by {} ({})", self.headline, self.author, self.location)
+    }
+
+    fn box_me(self) -> Box<Summarizable + 'static> {
+        Box::new(self)
     }
 }
 
@@ -37,11 +48,19 @@ impl Summarizable for Tweet {
     fn summary(&self) -> String {
         format!("{}: {}", self.username, self.content)
     }
+
+    fn box_me(self) -> Box<Summarizable + 'static> {
+        Box::new(self)
+    }
 }
 
 impl Summarizable for Box<Summarizable> {
     fn summary(&self) -> String {
         (**self).summary()
+    }
+
+    fn box_me(self) -> Box<Summarizable + 'static> {
+        self
     }
 }
 
@@ -69,6 +88,20 @@ fn feed() -> Vec<Box<Summarizable + 'static>> {
             retweet: true
         })
     ]
+}
+
+fn join_feeds() -> Vec<Box<Summarizable + 'static>> {
+    let mut feeds : Vec<Box<Summarizable + 'static>> = Vec::new();
+
+    for article in news_articles() {
+        feeds.push(article.box_me());
+    }
+
+    for tweet in tweets() {
+        feeds.push(tweet.box_me());
+    }
+
+    feeds
 }
 
 fn news_articles() -> Vec<NewsArticle> {
