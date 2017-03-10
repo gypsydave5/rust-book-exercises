@@ -1,3 +1,5 @@
+use std::fmt::Display;
+
 fn main() {
     let string1 = String::from("abcd");
     let string2 = "xyz";
@@ -6,6 +8,8 @@ fn main() {
     println!("The longest string is {}", result);
 
     struct_with_lifetimes();
+
+    longest_with_an_announcement(string1.as_str(), string2, "Woo-hoo!");
 }
 
 
@@ -21,8 +25,8 @@ fn lifetime_fail() {
 }
 
 // this fails because the borrow checked doesn't know whether the lifetime of the reference
-// returned refers to `x` or `y`.
-// NB - it cannot refer to anything created in the scope
+// returned refers to `x` or `y` . It cannot refer to anything created in the scope - that stuff
+// needs to either die or move out (and `str` not `&str` if it moves out).
 // fn longest_fail(x: &str, y: &str) -> &str {
 //     if x.len() > y.len() {
 //         x
@@ -86,3 +90,13 @@ fn struct_with_lifetimes() {
 }
 
 
+fn longest_with_an_announcement<'a, T>(x: &'a str, y: &'a str, ann: T) -> &'a str
+    where T: Display
+{
+    println!("Announcement: {}", ann);
+    if x.len() > y.len() {
+        return x
+    }
+
+    y
+}
