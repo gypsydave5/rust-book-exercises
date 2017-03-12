@@ -8,8 +8,6 @@ pub fn run(config: Config) -> Result<(), Box<Error>> {
     let mut contents = String::new();
     f.read_to_string(&mut contents)?;
 
-    println!("With text:\n{}", contents);
-
     Ok(())
 }
 
@@ -31,5 +29,33 @@ impl Config {
                search: search,
                filename: filename,
            })
+    }
+}
+
+fn grep<'a>(search: &str, contents: &'a str) -> Vec<&'a str> {
+    let mut results = Vec::new();
+
+    for line in contents.lines() {
+        if line.contains(search) {
+            results.push(line);
+        }
+    }
+
+    results
+}
+
+#[cfg(test)]
+mod test {
+    use grep;
+
+    #[test]
+    fn one_result() {
+        let search = "duct";
+        let contents = "\
+Rust:
+safe, fast, productive.
+Pick three.";
+
+        assert_eq!(vec!["safe, fast, productive."], grep(search, contents))
     }
 }
