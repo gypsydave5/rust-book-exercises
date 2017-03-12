@@ -49,7 +49,7 @@ fn grep<'a>(search: &str, contents: &'a str) -> Vec<&'a str> {
 }
 
 #[cfg(test)]
-mod test {
+mod tests {
     use grep;
 
     #[test]
@@ -62,4 +62,16 @@ Pick three.";
 
         assert_eq!(vec!["safe, fast, productive."], grep(search, contents))
     }
+
+    #[test]
+    fn two_results() {
+        let search = "robot";
+        let contents = "\
+robots are attacking
+how many?
+many robots";
+        assert_eq!(vec!["robots are attacking", "many robots"],
+                   grep(search, contents))
+    }
+
 }
