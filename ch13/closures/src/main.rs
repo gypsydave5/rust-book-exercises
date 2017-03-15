@@ -1,3 +1,5 @@
+use std::mem;
+
 fn main() {}
 
 fn call_with_one<F>(some_closure: F) -> i32
@@ -21,6 +23,12 @@ fn call_it_twice<F>(mut f: F)
     f();
 }
 
+fn own_it<F>(f: F)
+    where F: FnOnce()
+{
+    f();
+}
+
 #[test]
 fn functions_as_arguments() {
     let f = |x| x + 2;
@@ -39,7 +47,7 @@ fn mutie_closures() {
 #[test]
 fn closure_scope() {
     let mut x = 5;
-
+    // this block is to deal with
     {
         let mut f = |y| x = x + y;
         f(2);
@@ -56,7 +64,7 @@ fn mutie_closure_types() {
 }
 
 #[test]
-fn fnmut_type() {
+fn fn_mut_type() {
     let mut x = 5;
     {
         let f = || x += 1;
@@ -67,8 +75,20 @@ fn fnmut_type() {
 }
 
 #[test]
-fn whaaaa() {
-    let mut x = 5;
-    x += 2;
-    assert_eq!(x, 7);
+fn fn_once_type() {
+    // this example works because `i32` implements `Copy`
+    let num = 5;
+
+    let f = || {
+        // num is a copy in this context
+        // `mem::drop` will _destroy_ it
+        mem::drop(num);
+        // try changing it to a `String`
+    };
+
+    own_it(f);
+
+    // If `num` was a `String` it would've been consumed by f, and so be unavailable for the
+    // assertion.
+    assert_eq!(num, 5)
 }
