@@ -1,0 +1,6 @@
+[package]
+name = "for_loop_borrowing"
+version = "0.1.0"
+authors = ["David Wickes <dave.wickes@gmail.com>"]
+
+[dependencies]
