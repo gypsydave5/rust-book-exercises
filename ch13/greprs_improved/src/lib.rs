@@ -59,28 +59,17 @@ impl Config {
 }
 
 fn grep<'a>(search: &str, contents: &'a str) -> Vec<&'a str> {
-    let mut results = Vec::new();
-
-    for line in contents.lines() {
-        if line.contains(search) {
-            results.push(line);
-        }
-    }
-
-    results
+    contents.lines()
+        .filter(|line| line.contains(search))
+        .collect()
 }
 
 fn grep_case_insensitive<'a>(search: &str, contents: &'a str) -> Vec<&'a str> {
     let search = search.to_lowercase();
-    let mut results = Vec::new();
 
-    for line in contents.lines() {
-        if line.to_lowercase().contains(&search) {
-            results.push(line);
-        }
-    }
-
-    results
+    contents.lines()
+        .filter(|line| line.to_lowercase().contains(&search))
+        .collect()
 }
 
 #[cfg(test)]
