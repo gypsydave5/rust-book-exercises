@@ -1,0 +1,12 @@
+[package]
+authors = ["David Wickes <dave.wickes@gmail.com>"]
+name = "city-pop"
+version = "0.1.0"
+
+[[bin]]
+name = "city-pop"
+
+[dependencies]
+csv = "0.*"
+getopts = "0.*"
+rustc-serialize = "0.*"
