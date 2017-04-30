@@ -25,7 +25,7 @@ pub fn cdr(l: List) -> List {
 }
 
 impl List {
-    pub fn new(l: [i32]) -> List {
+    pub fn new(l: &[i32]) -> List {
         l.iter().rev().fold(List::Nil, |acc, &x| cons(x, acc))
     }
 }
@@ -63,7 +63,7 @@ mod tests {
     #[test]
     fn test_new_list() {
         let list = list_fixture();
-        let new_list = List::new([1, 2, 3]);
+        let new_list = List::new(&[1, 2, 3]);
         assert_eq!(list, new_list);
     }
 
