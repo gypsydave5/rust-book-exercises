@@ -1,6 +1,0 @@
-[package]
-name = "doc_comments"
-version = "0.1.0"
-authors = ["David Wickes <dave.wickes@gmail.com>"]
-
-[dependencies]
