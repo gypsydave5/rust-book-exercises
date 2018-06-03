@@ -1,0 +1,399 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+AVAILABLE	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/os.rs	/^        static AVAILABLE: AtomicBool = ATOMIC_BOOL_INIT;$/;"	c
+AsciiGenerator	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^pub struct AsciiGenerator<'a, R:'a> {$/;"	s
+CHACHA_ROUNDS	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/chacha.rs	/^const CHACHA_ROUNDS: u32 = 20; \/\/ Cryptographically secure from 8 upwards as of this writing$/;"	c
+CHAR_MASK	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/rand_impls.rs	/^        const CHAR_MASK: u32 = 0x001f_ffff;$/;"	c
+CHECKER	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/os.rs	/^        static CHECKER: Once = ONCE_INIT;$/;"	c
+CLEARCACHE	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/jitter.rs	/^        const CLEARCACHE: u64 = 100;$/;"	c
+CONSTANT	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/jitter.rs	/^        const CONSTANT: u64 = 0x67452301efcdab89;$/;"	c
+ChaChaRng	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/chacha.rs	/^pub struct ChaChaRng {$/;"	s
+ChiSquared	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/gamma.rs	/^pub struct ChiSquared {$/;"	s
+ChiSquaredRepr	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/gamma.rs	/^enum ChiSquaredRepr {$/;"	g
+Closed01	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^pub struct Closed01<F>(pub F);$/;"	s
+ConstRand	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/mod.rs	/^    struct ConstRand(usize);$/;"	s
+ConstRng	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    struct ConstRng { i: u64 }$/;"	s
+ConstantRng	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/rand_impls.rs	/^    struct ConstantRng(u64);$/;"	s
+Counter	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/reseeding.rs	/^    struct Counter {$/;"	s
+CountingRng	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/mod.rs	/^    struct CountingRng { i: u32 }$/;"	s
+DEFAULT_GENERATION_THRESHOLD	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/reseeding.rs	/^const DEFAULT_GENERATION_THRESHOLD: u64 = 32 * 1024;$/;"	c
+EMPTY	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/chacha.rs	/^static EMPTY: ChaChaRng = ChaChaRng {$/;"	c
+EMPTY	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac.rs	/^static EMPTY: IsaacRng = IsaacRng {$/;"	c
+EMPTY_64	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac64.rs	/^static EMPTY_64: Isaac64Rng = Isaac64Rng {$/;"	c
+Exp	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/exponential.rs	/^pub struct Exp {$/;"	s
+Exp1	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/exponential.rs	/^pub struct Exp1(pub f64);$/;"	s
+FACTOR	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/jitter.rs	/^        const FACTOR: u32  = 3;$/;"	c
+FILL_BYTES_V_LEN	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/reseeding.rs	/^    const FILL_BYTES_V_LEN: usize = 13579;$/;"	c
+FisherF	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/gamma.rs	/^pub struct FisherF {$/;"	s
+GEN_ASCII_STR_CHARSET	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^        const GEN_ASCII_STR_CHARSET: &'static [u8] =$/;"	c
+Gamma	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/gamma.rs	/^pub struct Gamma {$/;"	s
+GammaLargeShape	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/gamma.rs	/^struct GammaLargeShape {$/;"	s
+GammaRepr	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/gamma.rs	/^enum GammaRepr {$/;"	g
+GammaSmallShape	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/gamma.rs	/^struct GammaSmallShape {$/;"	s
+Generator	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^pub struct Generator<'a, T, R:'a> {$/;"	s
+INTERFACE	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/os.rs	/^    const INTERFACE: &'static [u8] = b"nacl-irt-random-0.1\\0";$/;"	c
+IndependentSample	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/mod.rs	/^pub trait IndependentSample<Support>: Sample<Support> {$/;"	t
+Isaac64Rng	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac64.rs	/^pub struct Isaac64Rng {$/;"	s
+IsaacRng	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac.rs	/^pub struct IsaacRng {$/;"	s
+Item	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    type Item = T;$/;"	T
+Item	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    type Item = char;$/;"	T
+JITTER_ROUNDS	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/jitter.rs	/^static JITTER_ROUNDS: AtomicUsize = ATOMIC_USIZE_INIT;$/;"	c
+JitterRng	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/jitter.rs	/^pub struct JitterRng {$/;"	s
+KEY_WORDS	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/chacha.rs	/^const KEY_WORDS    : usize =  8; \/\/ 8 words for the 256-bit key$/;"	c
+LOWER_MASK	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^        const LOWER_MASK: u32 = 0x7FFFFF;$/;"	c
+LOWER_MASK	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^        const LOWER_MASK: u64 = 0xFFFFFFFFFFFFF;$/;"	c
+LogNormal	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/normal.rs	/^pub struct LogNormal {$/;"	s
+MEMORY_BLOCKS	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/jitter.rs	/^const MEMORY_BLOCKS: usize = 64;$/;"	c
+MEMORY_BLOCKSIZE	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/jitter.rs	/^const MEMORY_BLOCKSIZE: usize = 32;$/;"	c
+MEMORY_SIZE	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/jitter.rs	/^const MEMORY_SIZE: usize = MEMORY_BLOCKS * MEMORY_BLOCKSIZE;$/;"	c
+MIDPOINT	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac.rs	/^        const MIDPOINT: usize = RAND_SIZE_USIZE \/ 2;$/;"	c
+MIDPOINT	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac64.rs	/^        const MIDPOINT: usize =  RAND_SIZE_64 \/ 2;$/;"	c
+MP_VEC	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac64.rs	/^        const MP_VEC: [(usize, usize); 2] = [(0,MIDPOINT), (MIDPOINT, 0)];$/;"	c
+MyRng	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    pub struct MyRng<R> { inner: R }$/;"	s
+MyRng	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/reseeding.rs	/^    type MyRng = ReseedingRng<Counter, ReseedWithDefault>;$/;"	T
+NR_GETRANDOM	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/os.rs	/^        const NR_GETRANDOM: libc::c_long = 278;$/;"	c
+NR_GETRANDOM	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/os.rs	/^        const NR_GETRANDOM: libc::c_long = 318;$/;"	c
+NR_GETRANDOM	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/os.rs	/^        const NR_GETRANDOM: libc::c_long = 355;$/;"	c
+NR_GETRANDOM	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/os.rs	/^        const NR_GETRANDOM: libc::c_long = 384;$/;"	c
+NaClIRTRandom	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/os.rs	/^    struct NaClIRTRandom {$/;"	s
+Normal	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/normal.rs	/^pub struct Normal {$/;"	s
+Open01	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^pub struct Open01<F>(pub F);$/;"	s
+OsRng	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/os.rs	/^    pub struct OsRng {$/;"	s
+OsRng	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/os.rs	/^    pub struct OsRng(extern fn(dest: *mut libc::c_void,$/;"	s
+OsRng	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/os.rs	/^    pub struct OsRng;$/;"	s
+OsRng	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/os.rs	/^pub struct OsRng(imp::OsRng);$/;"	s
+OsRngInner	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/os.rs	/^    enum OsRngInner {$/;"	g
+RAND_SIZE	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac.rs	/^const RAND_SIZE: u32 = 1 << RAND_SIZE_LEN;$/;"	c
+RAND_SIZE_64	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac64.rs	/^const RAND_SIZE_64: usize = 1 << RAND_SIZE_64_LEN;$/;"	c
+RAND_SIZE_64_LEN	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac64.rs	/^const RAND_SIZE_64_LEN: usize = 8;$/;"	c
+RAND_SIZE_LEN	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac.rs	/^const RAND_SIZE_LEN: usize = 8;$/;"	c
+RAND_SIZE_USIZE	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac.rs	/^const RAND_SIZE_USIZE: usize = 1 << RAND_SIZE_LEN;$/;"	c
+Rand	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^pub trait Rand : Sized {$/;"	t
+RandSample	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/mod.rs	/^pub struct RandSample<Sup> {$/;"	s
+Range	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/range.rs	/^pub struct Range<X> {$/;"	s
+ReadRng	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/read.rs	/^pub struct ReadRng<R> {$/;"	s
+ReseedWithDefault	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/reseeding.rs	/^pub struct ReseedWithDefault;$/;"	s
+Reseeder	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/reseeding.rs	/^pub trait Reseeder<R> {$/;"	t
+ReseedingRng	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/reseeding.rs	/^pub struct ReseedingRng<R, Rsdr> {$/;"	s
+Rng	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^pub trait Rng {$/;"	t
+SCALE	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/mod.rs	/^    const SCALE: f64 = (1u64 << 53) as f64;$/;"	c
+SCALE	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/rand_impls.rs	/^            const SCALE: $ty = (1u64 << $mantissa_bits) as $ty;$/;"	c
+STATE_WORDS	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/chacha.rs	/^const STATE_WORDS  : usize = 16;$/;"	c
+Sample	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/mod.rs	/^pub trait Sample<Support> {$/;"	t
+SampleRange	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/range.rs	/^pub trait SampleRange : Sized {$/;"	t
+SecRandom	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/os.rs	/^    enum SecRandom {}$/;"	g
+SecRandomCopyBytes	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/os.rs	/^        fn SecRandomCopyBytes(rnd: *const SecRandom,$/;"	f
+SeedableRng	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^pub trait SeedableRng<Seed>: Rng {$/;"	t
+StandardNormal	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/normal.rs	/^pub struct StandardNormal(pub f64);$/;"	s
+StdRng	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^pub struct StdRng {$/;"	s
+StudentT	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/gamma.rs	/^pub struct StudentT {$/;"	s
+TESTLOOPCOUNT	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/jitter.rs	/^        const TESTLOOPCOUNT: u64 = 300;$/;"	c
+THREAD_RNG_RESEED_THRESHOLD	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^const THREAD_RNG_RESEED_THRESHOLD: u64 = 32_768;$/;"	c
+ThreadRng	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^pub struct ThreadRng {$/;"	s
+ThreadRngInner	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^type ThreadRngInner = reseeding::ReseedingRng<StdRng, ThreadRngReseeder>;$/;"	T
+ThreadRngReseeder	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^struct ThreadRngReseeder;$/;"	s
+TimerError	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/jitter.rs	/^pub enum TimerError {$/;"	g
+UPPER_MASK	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^        const UPPER_MASK: u32 = 0x3F800000;$/;"	c
+UPPER_MASK	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^        const UPPER_MASK: u64 = 0x3FF0000000000000;$/;"	c
+Weighted	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/mod.rs	/^pub struct Weighted<T> {$/;"	s
+WeightedChoice	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/mod.rs	/^pub struct WeightedChoice<'a, T:'a> {$/;"	s
+XorShiftRng	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/xorshift.rs	/^pub struct XorShiftRng {$/;"	s
+ZIG_EXP_F	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/ziggurat_tables.rs	/^pub static ZIG_EXP_F: [f64; 257] =$/;"	c
+ZIG_EXP_R	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/ziggurat_tables.rs	/^pub const ZIG_EXP_R: f64 = 7.697117470131050077;$/;"	c
+ZIG_EXP_X	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/ziggurat_tables.rs	/^pub static ZIG_EXP_X: [f64; 257] =$/;"	c
+ZIG_NORM_F	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/ziggurat_tables.rs	/^pub static ZIG_NORM_F: [f64; 257] =$/;"	c
+ZIG_NORM_R	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/ziggurat_tables.rs	/^pub const ZIG_NORM_R: f64 = 3.654152885361008796;$/;"	c
+ZIG_NORM_X	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/ziggurat_tables.rs	/^pub static ZIG_NORM_X: [f64; 257] =$/;"	c
+ZigTable	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/ziggurat_tables.rs	/^pub type ZigTable = &'static [f64; 257];$/;"	T
+array_impl	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/rand_impls.rs	/^macro_rules! array_impl {$/;"	d
+black_box	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/jitter.rs	/^fn black_box<T>(dummy: T) -> T {$/;"	f
+choose	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    fn choose<'a, T>(&mut self, values: &'a [T]) -> Option<&'a T> where Self: Sized {$/;"	f
+choose_mut	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    fn choose_mut<'a, T>(&mut self, values: &'a mut [T]) -> Option<&'a mut T> where Self: Sized {$/;"	f
+clone	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/mod.rs	/^    fn clone(&self) -> Self { *self }$/;"	f
+clone	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac.rs	/^    fn clone(&self) -> IsaacRng {$/;"	f
+clone	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac64.rs	/^    fn clone(&self) -> Isaac64Rng {$/;"	f
+construct_range	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/range.rs	/^            fn construct_range(low: $ty, high: $ty) -> Range<$ty> {$/;"	f
+construct_range	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/range.rs	/^    fn construct_range(low: Self, high: Self) -> Range<Self>;$/;"	f
+core	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/chacha.rs	/^fn core(output: &mut [w32; STATE_WORDS], input: &[w32; STATE_WORDS]) {$/;"	f
+default	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/reseeding.rs	/^        fn default() -> Counter {$/;"	f
+default	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/reseeding.rs	/^    fn default() -> ReseedWithDefault { ReseedWithDefault }$/;"	f
+description	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/jitter.rs	/^    fn description(&self) -> &'static str {$/;"	f
+description	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/jitter.rs	/^    fn description(&self) -> &str {$/;"	f
+double_round	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/chacha.rs	/^macro_rules! double_round{$/;"	d
+fill	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/read.rs	/^fn fill(r: &mut Read, mut buf: &mut [u8]) -> io::Result<()> {$/;"	f
+fill_bytes	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/jitter.rs	/^    fn fill_bytes(&mut self, dest: &mut [u8]) {$/;"	f
+fill_bytes	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    fn fill_bytes(&mut self, bytes: &mut [u8]) {$/;"	f
+fill_bytes	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    fn fill_bytes(&mut self, dest: &mut [u8]) {$/;"	f
+fill_bytes	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/os.rs	/^        fn fill_bytes(&mut self, v: &mut [u8]) {$/;"	f
+fill_bytes	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/os.rs	/^    fn fill_bytes(&mut self, v: &mut [u8]) { self.0.fill_bytes(v) }$/;"	f
+fill_bytes	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/read.rs	/^    fn fill_bytes(&mut self, v: &mut [u8]) {$/;"	f
+fill_bytes	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/reseeding.rs	/^    fn fill_bytes(&mut self, dest: &mut [u8]) {$/;"	f
+float_impl	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/range.rs	/^macro_rules! float_impl {$/;"	d
+float_impls	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/rand_impls.rs	/^macro_rules! float_impls {$/;"	d
+floating_point_edge_cases	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/rand_impls.rs	/^    fn floating_point_edge_cases() {$/;"	f
+fmt	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/jitter.rs	/^    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {$/;"	f
+fmt	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/os.rs	/^    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {$/;"	f
+fmt	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac.rs	/^    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {$/;"	f
+fmt	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac64.rs	/^    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {$/;"	f
+from_seed	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    fn from_seed(seed: &'a [usize]) -> StdRng {$/;"	f
+from_seed	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    fn from_seed(seed: Seed) -> Self;$/;"	f
+from_seed	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/chacha.rs	/^    fn from_seed(seed: &'a [u32]) -> ChaChaRng {$/;"	f
+from_seed	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac.rs	/^    fn from_seed(seed: &'a [u32]) -> IsaacRng {$/;"	f
+from_seed	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac64.rs	/^    fn from_seed(seed: &'a [u64]) -> Isaac64Rng {$/;"	f
+from_seed	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/xorshift.rs	/^    fn from_seed(seed: [u32; 4]) -> XorShiftRng {$/;"	f
+from_seed	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/reseeding.rs	/^        fn from_seed(seed: u32) -> Counter {$/;"	f
+from_seed	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/reseeding.rs	/^    fn from_seed((rsdr, seed): (Rsdr, S)) -> ReseedingRng<R, Rsdr> {$/;"	f
+gen	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    fn gen<T: Rand>(&mut self) -> T where Self: Sized {$/;"	f
+gen_ascii_chars	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    fn gen_ascii_chars<'a>(&'a mut self) -> AsciiGenerator<'a, Self> where Self: Sized {$/;"	f
+gen_entropy	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/jitter.rs	/^    fn gen_entropy(&mut self) -> u64 {$/;"	f
+gen_iter	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    fn gen_iter<'a, T: Rand>(&'a mut self) -> Generator<'a, T, Self> where Self: Sized {$/;"	f
+gen_range	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    fn gen_range<T: PartialOrd + SampleRange>(&mut self, low: T, high: T) -> T where Self: Sized {$/;"	f
+gen_weighted_bool	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    fn gen_weighted_bool(&mut self, n: u32) -> bool where Self: Sized {$/;"	f
+get_nstime	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/jitter.rs	/^    pub fn get_nstime() -> u64 {$/;"	f
+getrandom	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/os.rs	/^    fn getrandom(_buf: &mut [u8]) -> libc::c_long { -1 }$/;"	f
+getrandom	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/os.rs	/^    fn getrandom(buf: &mut [u8]) -> libc::c_long {$/;"	f
+getrandom_fill_bytes	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/os.rs	/^    fn getrandom_fill_bytes(v: &mut [u8]) {$/;"	f
+ind	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac.rs	/^        macro_rules! ind {$/;"	d
+ind	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac64.rs	/^        macro_rules! ind {$/;"	d
+ind_sample	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/exponential.rs	/^    fn ind_sample<R: Rng>(&self, rng: &mut R) -> f64 {$/;"	f
+ind_sample	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/gamma.rs	/^    fn ind_sample<R: Rng>(&self, rng: &mut R) -> f64 {$/;"	f
+ind_sample	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/mod.rs	/^    fn ind_sample<R: Rng>(&self, &mut R) -> Support;$/;"	f
+ind_sample	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/mod.rs	/^    fn ind_sample<R: Rng>(&self, rng: &mut R) -> Sup {$/;"	f
+ind_sample	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/mod.rs	/^    fn ind_sample<R: Rng>(&self, rng: &mut R) -> T {$/;"	f
+ind_sample	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/normal.rs	/^    fn ind_sample<R: Rng>(&self, rng: &mut R) -> f64 {$/;"	f
+ind_sample	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/range.rs	/^    fn ind_sample<R: Rng>(&self, rng: &mut R) -> Sup {$/;"	f
+init	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/chacha.rs	/^    fn init(&mut self, key: &[u32; KEY_WORDS]) {$/;"	f
+init	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac.rs	/^    fn init(&mut self, use_rsl: bool) {$/;"	f
+init	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac64.rs	/^        macro_rules! init {$/;"	d
+init	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac64.rs	/^    fn init(&mut self, use_rsl: bool) {$/;"	f
+integer_impl	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/range.rs	/^macro_rules! integer_impl {$/;"	d
+is_getrandom_available	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/os.rs	/^    fn is_getrandom_available() -> bool { false }$/;"	f
+is_getrandom_available	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/os.rs	/^    fn is_getrandom_available() -> bool {$/;"	f
+isaac	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac.rs	/^    fn isaac(&mut self) {$/;"	f
+isaac64	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac64.rs	/^    fn isaac64(&mut self) {$/;"	f
+iter_eq	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    pub fn iter_eq<I, J>(i: I, j: J) -> bool$/;"	f
+kSecRandomDefault	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/os.rs	/^    const kSecRandomDefault: *const SecRandom = 0 as *const SecRandom;$/;"	c
+lfsr	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/jitter.rs	/^        fn lfsr(mut data: u64, time: u64) -> u64{$/;"	f
+lfsr_time	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/jitter.rs	/^    fn lfsr_time(&mut self, time: u64, var_rounds: bool) {$/;"	f
+log2	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/jitter.rs	/^        fn log2(x: u64) -> u32 { 64 - x.leading_zeros() }$/;"	f
+main	/Users/dwo3984/dev/rust/rust-book-exercises/guessing_game/src/main.rs	/^fn main() {$/;"	f
+measure_jitter	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/jitter.rs	/^    fn measure_jitter(&mut self) -> Option<()> {$/;"	f
+memaccess	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/jitter.rs	/^    fn memaccess(&mut self, var_rounds: bool) {$/;"	f
+memloop	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac.rs	/^            macro_rules! memloop {$/;"	d
+memloop	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac64.rs	/^            macro_rules! memloop {$/;"	d
+mix	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac.rs	/^        macro_rules! mix {$/;"	d
+mix	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac64.rs	/^        macro_rules! mix {$/;"	d
+nacl_interface_query	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/os.rs	/^        fn nacl_interface_query(name: *const libc::c_char,$/;"	f
+new	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/exponential.rs	/^    pub fn new(lambda: f64) -> Exp {$/;"	f
+new	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/gamma.rs	/^    pub fn new(k: f64) -> ChiSquared {$/;"	f
+new	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/gamma.rs	/^    pub fn new(m: f64, n: f64) -> FisherF {$/;"	f
+new	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/gamma.rs	/^    pub fn new(n: f64) -> StudentT {$/;"	f
+new	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/gamma.rs	/^    pub fn new(shape: f64, scale: f64) -> Gamma {$/;"	f
+new	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/mod.rs	/^    pub fn new() -> RandSample<Sup> {$/;"	f
+new	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/mod.rs	/^    pub fn new(items: &'a mut [Weighted<T>]) -> WeightedChoice<'a, T> {$/;"	f
+new	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/normal.rs	/^    pub fn new(mean: f64, std_dev: f64) -> LogNormal {$/;"	f
+new	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/normal.rs	/^    pub fn new(mean: f64, std_dev: f64) -> Normal {$/;"	f
+new	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/range.rs	/^    pub fn new(low: X, high: X) -> Range<X> {$/;"	f
+new	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/jitter.rs	/^    pub fn new() -> Result<JitterRng, TimerError> {$/;"	f
+new	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    pub fn new() -> io::Result<StdRng> {$/;"	f
+new	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/os.rs	/^        pub fn new() -> io::Result<OsRng> {$/;"	f
+new	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/os.rs	/^    pub fn new() -> io::Result<OsRng> {$/;"	f
+new	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/read.rs	/^    pub fn new(r: R) -> ReadRng<R> {$/;"	f
+new	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/reseeding.rs	/^    pub fn new(rng: R, generation_threshold: u64, reseeder: Rsdr) -> ReseedingRng<R,Rsdr> {$/;"	f
+new_raw	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/gamma.rs	/^    fn new_raw(shape: f64, scale: f64) -> GammaLargeShape {$/;"	f
+new_raw	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/gamma.rs	/^    fn new_raw(shape: f64, scale: f64) -> GammaSmallShape {$/;"	f
+new_unseeded	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/chacha.rs	/^    pub fn new_unseeded() -> ChaChaRng {$/;"	f
+new_unseeded	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac.rs	/^    pub fn new_unseeded() -> IsaacRng {$/;"	f
+new_unseeded	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac64.rs	/^    pub fn new_unseeded() -> Isaac64Rng {$/;"	f
+new_unseeded	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/xorshift.rs	/^    pub fn new_unseeded() -> XorShiftRng {$/;"	f
+new_with_timer	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/jitter.rs	/^    pub fn new_with_timer(timer: fn() -> u64) -> JitterRng {$/;"	f
+next	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^            fn next<T: Rng>(t: &mut T) -> u32 {$/;"	f
+next	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    fn next(&mut self) -> Option<T> {$/;"	f
+next	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    fn next(&mut self) -> Option<char> {$/;"	f
+next_f32	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    fn next_f32(&mut self) -> f32 {$/;"	f
+next_f64	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    fn next_f64(&mut self) -> f64 {$/;"	f
+next_u32	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/mod.rs	/^        fn next_u32(&mut self) -> u32 {$/;"	f
+next_u32	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/jitter.rs	/^    fn next_u32(&mut self) -> u32 {$/;"	f
+next_u32	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^        fn next_u32(&mut self) -> u32 { self.i as u32 }$/;"	f
+next_u32	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^        fn next_u32(&mut self) -> u32 {$/;"	f
+next_u32	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    fn next_u32(&mut self) -> u32 {$/;"	f
+next_u32	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    fn next_u32(&mut self) -> u32;$/;"	f
+next_u32	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/os.rs	/^        fn next_u32(&mut self) -> u32 {$/;"	f
+next_u32	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/os.rs	/^    fn next_u32(&mut self) -> u32 { self.0.next_u32() }$/;"	f
+next_u32	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/os.rs	/^fn next_u32(fill_buf: &mut FnMut(&mut [u8])) -> u32 {$/;"	f
+next_u32	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/chacha.rs	/^    fn next_u32(&mut self) -> u32 {$/;"	f
+next_u32	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac.rs	/^    fn next_u32(&mut self) -> u32 {$/;"	f
+next_u32	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac64.rs	/^    fn next_u32(&mut self) -> u32 {$/;"	f
+next_u32	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/xorshift.rs	/^    fn next_u32(&mut self) -> u32 {$/;"	f
+next_u32	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/rand_impls.rs	/^        fn next_u32(&mut self) -> u32 {$/;"	f
+next_u32	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/read.rs	/^    fn next_u32(&mut self) -> u32 {$/;"	f
+next_u32	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/reseeding.rs	/^        fn next_u32(&mut self) -> u32 {$/;"	f
+next_u32	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/reseeding.rs	/^    fn next_u32(&mut self) -> u32 {$/;"	f
+next_u64	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/mod.rs	/^        fn next_u64(&mut self) -> u64 {$/;"	f
+next_u64	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/jitter.rs	/^    fn next_u64(&mut self) -> u64 {$/;"	f
+next_u64	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^        fn next_u64(&mut self) -> u64 { self.i }$/;"	f
+next_u64	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    fn next_u64(&mut self) -> u64 {$/;"	f
+next_u64	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/os.rs	/^        fn next_u64(&mut self) -> u64 {$/;"	f
+next_u64	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/os.rs	/^    fn next_u64(&mut self) -> u64 { self.0.next_u64() }$/;"	f
+next_u64	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/os.rs	/^fn next_u64(fill_buf: &mut FnMut(&mut [u8])) -> u64 {$/;"	f
+next_u64	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac64.rs	/^    fn next_u64(&mut self) -> u64 {$/;"	f
+next_u64	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/rand_impls.rs	/^        fn next_u64(&mut self) -> u64 {$/;"	f
+next_u64	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/read.rs	/^    fn next_u64(&mut self) -> u64 {$/;"	f
+next_u64	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/reseeding.rs	/^    fn next_u64(&mut self) -> u64 {$/;"	f
+pdf	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/exponential.rs	/^        fn pdf(x: f64) -> f64 {$/;"	f
+pdf	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/normal.rs	/^        fn pdf(x: f64) -> f64 {$/;"	f
+quarter_round	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/chacha.rs	/^macro_rules! quarter_round{$/;"	d
+rand	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/exponential.rs	/^    fn rand<R:Rng>(rng: &mut R) -> Exp1 {$/;"	f
+rand	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/mod.rs	/^        fn rand<R: Rng>(_: &mut R) -> ConstRand {$/;"	f
+rand	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/normal.rs	/^    fn rand<R:Rng>(rng: &mut R) -> StandardNormal {$/;"	f
+rand	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    fn rand<R: Rng>(rng: &mut R) -> Self;$/;"	f
+rand	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/chacha.rs	/^    fn rand<R: Rng>(other: &mut R) -> ChaChaRng {$/;"	f
+rand	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac.rs	/^    fn rand<R: Rng>(other: &mut R) -> IsaacRng {$/;"	f
+rand	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac64.rs	/^    fn rand<R: Rng>(other: &mut R) -> Isaac64Rng {$/;"	f
+rand	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/xorshift.rs	/^    fn rand<R: Rng>(rng: &mut R) -> XorShiftRng {$/;"	f
+rand	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/rand_impls.rs	/^                fn rand<R: Rng>(rng: &mut R) -> $ty {$/;"	f
+rand	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/rand_impls.rs	/^                fn rand<R: Rng>(rng: &mut R) -> Closed01<$ty> {$/;"	f
+rand	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/rand_impls.rs	/^                fn rand<R: Rng>(rng: &mut R) -> Open01<$ty> {$/;"	f
+rand	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/rand_impls.rs	/^            fn rand<R: Rng>(_rng: &mut R) -> ( $( $tyvar ),* , ) {$/;"	f
+rand	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/rand_impls.rs	/^            fn rand<R: Rng>(_rng: &mut R) -> [T; $n] { [] }$/;"	f
+rand	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/rand_impls.rs	/^            fn rand<R: Rng>(_rng: &mut R) -> [T; $n] {$/;"	f
+rand	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/rand_impls.rs	/^    fn rand<R: Rng>(_: &mut R) -> () { () }$/;"	f
+rand	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/rand_impls.rs	/^    fn rand<R: Rng>(rng: &mut R) -> Option<T> {$/;"	f
+rand	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/rand_impls.rs	/^    fn rand<R: Rng>(rng: &mut R) -> bool {$/;"	f
+rand	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/rand_impls.rs	/^    fn rand<R: Rng>(rng: &mut R) -> char {$/;"	f
+rand	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/rand_impls.rs	/^    fn rand<R: Rng>(rng: &mut R) -> i128 {$/;"	f
+rand	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/rand_impls.rs	/^    fn rand<R: Rng>(rng: &mut R) -> i16 {$/;"	f
+rand	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/rand_impls.rs	/^    fn rand<R: Rng>(rng: &mut R) -> i32 {$/;"	f
+rand	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/rand_impls.rs	/^    fn rand<R: Rng>(rng: &mut R) -> i64 {$/;"	f
+rand	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/rand_impls.rs	/^    fn rand<R: Rng>(rng: &mut R) -> i8 {$/;"	f
+rand	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/rand_impls.rs	/^    fn rand<R: Rng>(rng: &mut R) -> isize {$/;"	f
+rand	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/rand_impls.rs	/^    fn rand<R: Rng>(rng: &mut R) -> u128 {$/;"	f
+rand	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/rand_impls.rs	/^    fn rand<R: Rng>(rng: &mut R) -> u16 {$/;"	f
+rand	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/rand_impls.rs	/^    fn rand<R: Rng>(rng: &mut R) -> u32 {$/;"	f
+rand	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/rand_impls.rs	/^    fn rand<R: Rng>(rng: &mut R) -> u64 {$/;"	f
+rand	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/rand_impls.rs	/^    fn rand<R: Rng>(rng: &mut R) -> u8 {$/;"	f
+rand	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/rand_impls.rs	/^    fn rand<R: Rng>(rng: &mut R) -> usize {$/;"	f
+rand_closed	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/rand_impls.rs	/^    fn rand_closed() {$/;"	f
+rand_open	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/rand_impls.rs	/^    fn rand_open() {$/;"	f
+random	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^pub fn random<T: Rand>() -> T {$/;"	f
+random_loop_cnt	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/jitter.rs	/^    fn random_loop_cnt(&mut self, n_bits: u32) -> u32 {$/;"	f
+reseed	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    fn reseed(&mut self, Seed);$/;"	f
+reseed	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    fn reseed(&mut self, rng: &mut StdRng) {$/;"	f
+reseed	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    fn reseed(&mut self, seed: &'a [usize]) {$/;"	f
+reseed	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/chacha.rs	/^    fn reseed(&mut self, seed: &'a [u32]) {$/;"	f
+reseed	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac.rs	/^    fn reseed(&mut self, seed: &'a [u32]) {$/;"	f
+reseed	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac64.rs	/^    fn reseed(&mut self, seed: &'a [u64]) {$/;"	f
+reseed	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/xorshift.rs	/^    fn reseed(&mut self, seed: [u32; 4]) {$/;"	f
+reseed	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/reseeding.rs	/^        fn reseed(&mut self, seed: u32) {$/;"	f
+reseed	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/reseeding.rs	/^    fn reseed(&mut self, (rsdr, seed): (Rsdr, S)) {$/;"	f
+reseed	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/reseeding.rs	/^    fn reseed(&mut self, rng: &mut R) {$/;"	f
+reseed	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/reseeding.rs	/^    fn reseed(&mut self, rng: &mut R);$/;"	f
+reseed_if_necessary	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/reseeding.rs	/^    pub fn reseed_if_necessary(&mut self) {$/;"	f
+rng	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    pub fn rng() -> MyRng<::ThreadRng> {$/;"	f
+rngstepn	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac.rs	/^            macro_rules! rngstepn {$/;"	d
+rngstepn	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac64.rs	/^                macro_rules! rngstepn {$/;"	d
+rngstepp	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac.rs	/^            macro_rules! rngstepp {$/;"	d
+rngstepp	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac64.rs	/^                macro_rules! rngstepp {$/;"	d
+sample	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/exponential.rs	/^    fn sample<R: Rng>(&mut self, rng: &mut R) -> f64 { self.ind_sample(rng) }$/;"	f
+sample	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/gamma.rs	/^    fn sample<R: Rng>(&mut self, rng: &mut R) -> f64 { self.ind_sample(rng) }$/;"	f
+sample	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/mod.rs	/^    fn sample<R: Rng>(&mut self, rng: &mut R) -> Sup { self.ind_sample(rng) }$/;"	f
+sample	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/mod.rs	/^    fn sample<R: Rng>(&mut self, rng: &mut R) -> Support;$/;"	f
+sample	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/mod.rs	/^    fn sample<R: Rng>(&mut self, rng: &mut R) -> T { self.ind_sample(rng) }$/;"	f
+sample	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/normal.rs	/^    fn sample<R: Rng>(&mut self, rng: &mut R) -> f64 { self.ind_sample(rng) }$/;"	f
+sample	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/range.rs	/^    fn sample<R: Rng>(&mut self, rng: &mut R) -> Sup { self.ind_sample(rng) }$/;"	f
+sample	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^pub fn sample<T, I, R>(rng: &mut R, iterable: I, amount: usize) -> Vec<T>$/;"	f
+sample_indices	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/seq.rs	/^pub fn sample_indices<R>(rng: &mut R, length: usize, amount: usize) -> Vec<usize>$/;"	f
+sample_indices_cache	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/seq.rs	/^fn sample_indices_cache<R>($/;"	f
+sample_indices_inplace	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/seq.rs	/^fn sample_indices_inplace<R>(rng: &mut R, length: usize, amount: usize) -> Vec<usize>$/;"	f
+sample_iter	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/seq.rs	/^pub fn sample_iter<T, I, R>(rng: &mut R, iterable: I, amount: usize) -> Result<Vec<T>, Vec<T>>$/;"	f
+sample_range	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/range.rs	/^            fn sample_range<R: Rng>(r: &Range<$ty>, rng: &mut R) -> $ty {$/;"	f
+sample_range	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/range.rs	/^    fn sample_range<R: Rng>(r: &Range<Self>, rng: &mut R) -> Self;$/;"	f
+sample_slice	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/seq.rs	/^pub fn sample_slice<R, T>(rng: &mut R, slice: &[T], amount: usize) -> Vec<T>$/;"	f
+sample_slice_ref	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/seq.rs	/^pub fn sample_slice_ref<'a, R, T>(rng: &mut R, slice: &'a [T], amount: usize) -> Vec<&'a T>$/;"	f
+set_counter	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/chacha.rs	/^    pub fn set_counter(&mut self, counter_low: u64, counter_high: u64) {$/;"	f
+set_rounds	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/jitter.rs	/^    pub fn set_rounds(&mut self, rounds: u32) {$/;"	f
+shuffle	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    fn shuffle<T>(&mut self, values: &mut [T]) where Self: Sized {$/;"	f
+stir_pool	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/jitter.rs	/^    fn stir_pool(&mut self) {$/;"	f
+stuck	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/jitter.rs	/^    fn stuck(&mut self, current_delta: i64) -> bool {$/;"	f
+syscall	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/os.rs	/^            fn syscall(number: libc::c_long, ...) -> libc::c_long;$/;"	f
+t	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/mod.rs	/^        macro_rules! t {$/;"	d
+t	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/range.rs	/^        macro_rules! t {$/;"	d
+test_chi_squared_invalid_dof	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/gamma.rs	/^    fn test_chi_squared_invalid_dof() {$/;"	f
+test_chi_squared_large	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/gamma.rs	/^    fn test_chi_squared_large() {$/;"	f
+test_chi_squared_one	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/gamma.rs	/^    fn test_chi_squared_one() {$/;"	f
+test_chi_squared_small	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/gamma.rs	/^    fn test_chi_squared_small() {$/;"	f
+test_choose	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    fn test_choose() {$/;"	f
+test_exp	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/exponential.rs	/^    fn test_exp() {$/;"	f
+test_exp_invalid_lambda_neg	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/exponential.rs	/^    fn test_exp_invalid_lambda_neg() {$/;"	f
+test_exp_invalid_lambda_zero	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/exponential.rs	/^    fn test_exp_invalid_lambda_zero() {$/;"	f
+test_f	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/gamma.rs	/^    fn test_f() {$/;"	f
+test_fill_bytes_default	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    fn test_fill_bytes_default() {$/;"	f
+test_floats	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/range.rs	/^    fn test_floats() {$/;"	f
+test_gen_ascii_str	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    fn test_gen_ascii_str() {$/;"	f
+test_gen_range	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    fn test_gen_range() {$/;"	f
+test_gen_range_panic_int	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    fn test_gen_range_panic_int() {$/;"	f
+test_gen_range_panic_usize	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    fn test_gen_range_panic_usize() {$/;"	f
+test_gen_vec	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    fn test_gen_vec() {$/;"	f
+test_gen_weighted_bool	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    fn test_gen_weighted_bool() {$/;"	f
+test_integers	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/range.rs	/^    fn test_integers() {$/;"	f
+test_log_normal	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/normal.rs	/^    fn test_log_normal() {$/;"	f
+test_log_normal_invalid_sd	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/normal.rs	/^    fn test_log_normal_invalid_sd() {$/;"	f
+test_normal	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/normal.rs	/^    fn test_normal() {$/;"	f
+test_normal_invalid_sd	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/normal.rs	/^    fn test_normal_invalid_sd() {$/;"	f
+test_os_rng	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/os.rs	/^    fn test_os_rng() {$/;"	f
+test_os_rng_tasks	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/os.rs	/^    fn test_os_rng_tasks() {$/;"	f
+test_rand_sample	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/mod.rs	/^    fn test_rand_sample() {$/;"	f
+test_random	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    fn test_random() {$/;"	f
+test_range_bad_limits_equal	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/range.rs	/^    fn test_range_bad_limits_equal() {$/;"	f
+test_range_bad_limits_flipped	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/range.rs	/^    fn test_range_bad_limits_flipped() {$/;"	f
+test_reader_rng_fill_bytes	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/read.rs	/^    fn test_reader_rng_fill_bytes() {$/;"	f
+test_reader_rng_insufficient_bytes	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/read.rs	/^    fn test_reader_rng_insufficient_bytes() {$/;"	f
+test_reader_rng_u32	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/read.rs	/^    fn test_reader_rng_u32() {$/;"	f
+test_reader_rng_u64	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/read.rs	/^    fn test_reader_rng_u64() {$/;"	f
+test_reseeding	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/reseeding.rs	/^    fn test_reseeding() {$/;"	f
+test_rng_32_rand_seeded	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac.rs	/^    fn test_rng_32_rand_seeded() {$/;"	f
+test_rng_32_reseed	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac.rs	/^    fn test_rng_32_reseed() {$/;"	f
+test_rng_32_seeded	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac.rs	/^    fn test_rng_32_seeded() {$/;"	f
+test_rng_32_true_values	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac.rs	/^    fn test_rng_32_true_values() {$/;"	f
+test_rng_64_rand_seeded	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac64.rs	/^    fn test_rng_64_rand_seeded() {$/;"	f
+test_rng_64_reseed	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac64.rs	/^    fn test_rng_64_reseed() {$/;"	f
+test_rng_64_seeded	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac64.rs	/^    fn test_rng_64_seeded() {$/;"	f
+test_rng_64_true_values	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac64.rs	/^    fn test_rng_64_true_values() {$/;"	f
+test_rng_clone	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/chacha.rs	/^    fn test_rng_clone() {$/;"	f
+test_rng_clone	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac64.rs	/^    fn test_rng_clone() {$/;"	f
+test_rng_fill_bytes	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/reseeding.rs	/^    fn test_rng_fill_bytes() {$/;"	f
+test_rng_rand_seeded	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/chacha.rs	/^    fn test_rng_rand_seeded() {$/;"	f
+test_rng_reseed	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/chacha.rs	/^    fn test_rng_reseed() {$/;"	f
+test_rng_reseed	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/reseeding.rs	/^    fn test_rng_reseed() {$/;"	f
+test_rng_seeded	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/chacha.rs	/^    fn test_rng_seeded() {$/;"	f
+test_rng_seeded	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/reseeding.rs	/^    fn test_rng_seeded() {$/;"	f
+test_rng_trait_object	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    fn test_rng_trait_object() {$/;"	f
+test_rng_true_values	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/chacha.rs	/^    fn test_rng_true_values() {$/;"	f
+test_sample_iter	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/seq.rs	/^    fn test_sample_iter() {$/;"	f
+test_sample_slice	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/seq.rs	/^    fn test_sample_slice() {$/;"	f
+test_sample_slice_boundaries	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/seq.rs	/^    fn test_sample_slice_boundaries() {$/;"	f
+test_shuffle	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    fn test_shuffle() {$/;"	f
+test_std_rng_reseed	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    fn test_std_rng_reseed() {$/;"	f
+test_std_rng_seeded	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    fn test_std_rng_seeded() {$/;"	f
+test_t	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/gamma.rs	/^    fn test_t() {$/;"	f
+test_thread_rng	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    fn test_thread_rng() {$/;"	f
+test_timer	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/jitter.rs	/^    pub fn test_timer(&mut self) -> Result<u32, TimerError> {$/;"	f
+test_weak_rng	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^    fn test_weak_rng() {$/;"	f
+test_weighted_choice	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/mod.rs	/^    fn test_weighted_choice() {$/;"	f
+test_weighted_choice_no_items	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/mod.rs	/^    fn test_weighted_choice_no_items() {$/;"	f
+test_weighted_choice_weight_overflows	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/mod.rs	/^    fn test_weighted_choice_weight_overflows() {$/;"	f
+test_weighted_choice_zero_weight	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/mod.rs	/^    fn test_weighted_choice_zero_weight() {$/;"	f
+test_weighted_clone_change_item	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/mod.rs	/^    fn test_weighted_clone_change_item() {$/;"	f
+test_weighted_clone_change_weight	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/mod.rs	/^    fn test_weighted_clone_change_weight() {$/;"	f
+test_weighted_clone_initialization	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/mod.rs	/^    fn test_weighted_clone_initialization() {$/;"	f
+thread_rng	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^pub fn thread_rng() -> ThreadRng {$/;"	f
+timer_stats	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/jitter.rs	/^    pub fn timer_stats(&mut self, var_rounds: bool) -> i64 {$/;"	f
+tuple_impl	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/rand_impls.rs	/^macro_rules! tuple_impl {$/;"	d
+update	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/chacha.rs	/^    fn update(&mut self) {$/;"	f
+w32	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/chacha.rs	/^type w32 = w<u32>;$/;"	T
+w32	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac.rs	/^type w32 = w<u32>;$/;"	T
+w64	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/prng/isaac64.rs	/^type w64 = w<u64>;$/;"	T
+weak_rng	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs	/^pub fn weak_rng() -> XorShiftRng {$/;"	f
+zero_case	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/exponential.rs	/^        fn zero_case<R:Rng>(rng: &mut R, _u: f64) -> f64 {$/;"	f
+zero_case	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/normal.rs	/^        fn zero_case<R:Rng>(rng: &mut R, u: f64) -> f64 {$/;"	f
+ziggurat	/Users/dwo3984/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/distributions/mod.rs	/^fn ziggurat<R: Rng, P, Z>($/;"	f
