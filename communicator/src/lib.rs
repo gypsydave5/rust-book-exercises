@@ -1,7 +1,17 @@
+pub mod client;
+pub mod network;
+
 #[cfg(test)]
 mod tests {
+    use super::client;
+    use super::client::*;
+    use super::client::connect;
+
     #[test]
     fn it_works() {
-        assert_eq!(2 + 2, 4);
+        ::client::connect(); // to the root!
+        super::client::connect(); // one up!
+        client::connect();
+        connect();
     }
 }
