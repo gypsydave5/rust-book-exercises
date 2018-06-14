@@ -7,26 +7,32 @@ pub struct AverageResult {
 }
 
 pub fn average(numbers: Vec<u32>) -> AverageResult {
+    AverageResult {
+        mode: mode(numbers.clone()),
+        median: median(numbers.clone()),
+        mean: mean(numbers.clone()),
+    }
+}
+
+fn median(numbers: Vec<u32>) -> u32 {
     let halfway = numbers.len() / 2;
     let mut sorted = numbers.clone();
     sorted.sort();
-    let median = sorted.get(halfway).unwrap().clone();
+    sorted.get(halfway).unwrap().clone()
+}
 
+fn mode(numbers: Vec<u32>) -> u32 {
     let mut map = HashMap::new();
-    for number in numbers.clone().into_iter() {
+    for number in numbers.into_iter() {
         let number_count = map.entry(number).or_insert(0);
         *number_count += 1;
     }
-    let mode = map.into_iter().max_by_key(|x| x.1).unwrap().0;
+    map.into_iter().max_by_key(|x| x.1).unwrap().0
+}
 
+fn mean(numbers: Vec<u32>) -> u32 {
     let sum: u32 = numbers.clone().into_iter().sum();
-    let mean: u32 = sum / (numbers.len() as u32);
-
-    AverageResult {
-        mode: mode,
-        median: median,
-        mean: mean,
-    }
+    sum / (numbers.len() as u32)
 }
 
 #[cfg(test)]
