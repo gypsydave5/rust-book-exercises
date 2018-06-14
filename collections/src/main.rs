@@ -28,4 +28,5 @@ fn main() {
     let average = exercises::average(numbers);
     println!("Mode: {}", average.mode);
     println!("Median: {}", average.median);
+    println!("Mean: {}", average.mean);
 }
