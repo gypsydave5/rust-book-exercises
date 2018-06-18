@@ -8,7 +8,7 @@ pub struct AverageResult {
 
 pub fn average(numbers: Vec<u32>) -> AverageResult {
     AverageResult {
-        mode: mode(numbers.clone()),
+        mode: mode(&numbers),
         median: median(numbers.clone()),
         mean: mean(&numbers),
     }
@@ -21,13 +21,13 @@ fn median(numbers: Vec<u32>) -> u32 {
     sorted.get(halfway).unwrap().clone()
 }
 
-fn mode(numbers: Vec<u32>) -> u32 {
+fn mode(numbers: &Vec<u32>) -> u32 {
     let mut map = HashMap::new();
     for number in numbers.into_iter() {
         let number_count = map.entry(number).or_insert(0);
         *number_count += 1;
     }
-    map.into_iter().max_by_key(|x| x.1).unwrap().0
+    map.into_iter().max_by_key(|x| x.1).unwrap().0.clone()
 }
 
 fn mean(numbers: &Vec<u32>) -> u32 {
