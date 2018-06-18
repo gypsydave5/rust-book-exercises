@@ -10,7 +10,7 @@ pub fn average(numbers: Vec<u32>) -> AverageResult {
     AverageResult {
         mode: mode(numbers.clone()),
         median: median(numbers.clone()),
-        mean: mean(numbers.clone()),
+        mean: mean(&numbers),
     }
 }
 
@@ -30,7 +30,7 @@ fn mode(numbers: Vec<u32>) -> u32 {
     map.into_iter().max_by_key(|x| x.1).unwrap().0
 }
 
-fn mean(numbers: Vec<u32>) -> u32 {
+fn mean(numbers: &Vec<u32>) -> u32 {
     let sum: u32 = numbers.clone().into_iter().sum();
     sum / (numbers.len() as u32)
 }
