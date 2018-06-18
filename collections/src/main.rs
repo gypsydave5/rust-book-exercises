@@ -25,7 +25,7 @@ fn main() {
     let numbers: Vec<u32> = (1..20).into_iter().map(|_| rng.gen_range(1, 10)).collect();
     println!("{:?}", numbers);
 
-    let average = exercises::average(numbers);
+    let average = exercises::average(&numbers);
     println!("Mode: {}", average.mode);
     println!("Median: {}", average.median);
     println!("Mean: {}", average.mean);

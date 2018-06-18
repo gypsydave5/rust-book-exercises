@@ -6,15 +6,15 @@ pub struct AverageResult {
     pub mean: u32,
 }
 
-pub fn average(numbers: Vec<u32>) -> AverageResult {
+pub fn average(numbers: &Vec<u32>) -> AverageResult {
     AverageResult {
-        mode: mode(&numbers),
-        median: median(numbers.clone()),
-        mean: mean(&numbers),
+        mode: mode(numbers),
+        median: median(numbers),
+        mean: mean(numbers),
     }
 }
 
-fn median(numbers: Vec<u32>) -> u32 {
+fn median(numbers: &Vec<u32>) -> u32 {
     let halfway = numbers.len() / 2;
     let mut sorted = numbers.clone();
     sorted.sort();
@@ -42,21 +42,21 @@ mod tests {
     #[test]
     fn it_returns_the_mode() {
         let numbers = vec![1, 2, 3, 3, 3, 4, 5, 6];
-        let mode = average(numbers).mode;
+        let mode = average(&numbers).mode;
         assert_eq!(3, mode);
     }
 
     #[test]
     fn it_returns_the_median() {
         let numbers = vec![4, 1, 1, 10, 10];
-        let median = average(numbers).median;
+        let median = average(&numbers).median;
         assert_eq!(4, median);
     }
 
     #[test]
     fn it_returns_the_mean() {
         let numbers = vec![2, 4, 5, 1, 3, 3];
-        let mean = average(numbers).mean;
+        let mean = average(&numbers).mean;
         assert_eq!(3, mean);
     }
 }
