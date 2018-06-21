@@ -29,4 +29,7 @@ fn main() {
     println!("Mode: {}", average.mode);
     println!("Median: {}", average.median);
     println!("Mean: {}", average.mean);
+
+    let latin = exercises::pig_latin(String::from("hello, world!"));
+    println!("Latin: {}", latin);
 }
